@@ -192,7 +192,7 @@ def run_flow(flow, storage, flags=None, http=None):
     """
     if flags is None:
         flags = argparser.parse_args()
-    logging.getLogger().setLevel(getattr(logging, flags.logging_level))
+#     logging.getLogger().setLevel(getattr(logging, flags.logging_level))
     if not flags.noauth_local_webserver:
         success = False
         port_number = 0
